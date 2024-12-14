@@ -3,22 +3,29 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div>
-      <div className="relative w-full h-[450px]"> {/* Wrapper div for controlling height */}
+      <div className="relative w-full h-[450px]">
+        {/* Background Image */}
         <Image
-          className="object-cover"   // Ensures the image covers the container without stretching
+          className="object-cover"
           src="/p1.jpg"
-          alt="Image"
-          layout="fill"  // Ensures the image fills the container
-          objectFit="cover"  // Optional: provides better control over how the image behaves
+          alt="Farming Background"
+          layout="fill"
+          objectFit="cover"
         />
-        <div  className="absolute inset-0 flex flex-col justify-center items-center transform transition-transform duration-500 hover:translate-x-10">
-        <h1 className="text-white text-2xl font-bold">Farming is a Best Solution Of World Starvation</h1>
-        <p className="text-white text-xl">Sow the seeds with care, and nature will do the rest </p>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center transform transition-transform duration-500 hover:scale-105">
+          <h1 className="text-white text-2xl md:text-4xl font-bold">
+            Farming is the Best Solution to World Starvation
+          </h1>
+          <p className="text-white text-lg md:text-xl mt-4">
+            Sow the seeds with care, and nature will do the rest.
+          </p>
         </div>
       </div>
-    
-
-
     </div>
   );
 }

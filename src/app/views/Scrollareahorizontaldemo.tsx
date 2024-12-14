@@ -1,11 +1,11 @@
-import * as React from "react"
-import Image from "next/image"
+import * as React from "react";
+import Image from "next/image";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export interface Artwork {
-  artist: string
-  art: string
+  artist: string;
+  art: string;
 }
 
 const works: Artwork[] = [
@@ -39,18 +39,20 @@ export default function ScrollAreaHorizontalDemo() {
         <div className="flex w-max space-x-4 p-8">
           {works.map((artwork) => (
             <figure key={artwork.artist} className="shrink-0">
-              <div className="overflow-hidden rounded-md group"> 
-                
+              <div className="overflow-hidden rounded-md group">
                 <Image
                   src={artwork.art}
                   alt={`Photo by ${artwork.artist}`}
-                  className="aspect-[3/4] h-[500px] w-[375px] object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="aspect-[3/4] h-[300px] md:h-[400px] lg:h-[500px] w-[250px] md:w-[300px] lg:w-[375px] object-cover transition-transform duration-300 group-hover:scale-110"
                   width={375}
                   height={500}
                 />
               </div>
               <figcaption className="pt-2 text-xs text-muted-foreground">
-                Photo by <span className="font-semibold text-foreground text-white">{artwork.artist}</span>
+                Photo by{" "}
+                <span className="font-semibold text-foreground text-white">
+                  {artwork.artist}
+                </span>
               </figcaption>
             </figure>
           ))}

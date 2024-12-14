@@ -9,9 +9,9 @@ export default function Testimonials() {
         <h1 className='text-gray-600 text-2xl mt-4 font-bold'>The Needs Of Its Consequence</h1>
       </div>
 
-      <div className='flex justify-between mt-6'>
+      <div className='flex flex-wrap justify-center gap-6 mt-6'>
         {/* First Testimonial */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center max-w-xs'>
           <div className="w-24 h-24 rounded-full overflow-hidden">
             <Image 
               className="object-cover"  
@@ -21,7 +21,7 @@ export default function Testimonials() {
               alt="image" 
             />
           </div>
-          <p className='text-gray-600 text-xl mt-4'>
+          <p className='text-gray-600 text-xl mt-4 text-center'>
             “Lorem ipsum dolor sit, amet consectetur adipisicing elit <br />
             Provident deleniti iusto molestias, dolore vel fugiat ab <br />
             placeat ea?”
@@ -30,7 +30,7 @@ export default function Testimonials() {
         </div>
 
         {/* Second Testimonial */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center max-w-xs'>
           <div className="w-24 h-24 rounded-full overflow-hidden">
             <Image 
               className="object-cover"  
@@ -40,7 +40,7 @@ export default function Testimonials() {
               alt="image" 
             />
           </div>
-          <p className='text-gray-600 text-xl mt-4'>
+          <p className='text-gray-600 text-xl mt-4 text-center'>
             “Lorem ipsum dolor sit, amet consectetur adipisicing elit <br />
             Provident deleniti iusto molestias, dolore vel fugiat ab <br />
             placeat ea?”
@@ -49,9 +49,9 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className='flex justify-between mt-6'>
+      <div className='flex flex-wrap justify-center gap-6 mt-6'>
         {/* Third Testimonial */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center max-w-xs'>
           <div className="w-24 h-24 rounded-full overflow-hidden">
             <Image 
               className="object-cover"  
@@ -61,7 +61,7 @@ export default function Testimonials() {
               alt="image" 
             />
           </div>
-          <p className='text-gray-600 text-xl mt-4'>
+          <p className='text-gray-600 text-xl mt-4 text-center'>
             “Lorem ipsum dolor sit, amet consectetur adipisicing elit <br />
             Provident deleniti iusto molestias, dolore vel fugiat ab <br />
             placeat ea?”
@@ -70,7 +70,7 @@ export default function Testimonials() {
         </div>
 
         {/* Fourth Testimonial */}
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center max-w-xs'>
           <div className="w-24 h-24 rounded-full overflow-hidden">
             <Image 
               className="object-cover"  
@@ -80,7 +80,7 @@ export default function Testimonials() {
               alt="image" 
             />
           </div>
-          <p className='text-gray-600 text-xl mt-4'>
+          <p className='text-gray-600 text-xl mt-4 text-center'>
             “Lorem ipsum dolor sit, amet consectetur adipisicing elit <br />
             Provident deleniti iusto molestias, dolore vel fugiat ab <br />
             placeat ea?”
@@ -91,5 +91,3 @@ export default function Testimonials() {
     </div>
   )
 }
-
-
