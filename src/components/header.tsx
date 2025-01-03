@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row justify-between items-center w-full h-auto md:h-8 bg-blue-900 text-white px-6 md:px-12 py-4 md:py-0">
         {/* Left Logo Section */}
         <div className="flex items-center space-x-1">
-          <h3 className="text-lg md:text-xl">BOOTSTRAPMADE</h3>
+          <h3 className="text-lg md:text-xl">IQRASALEEMMADE</h3>
           <h3 className="text-lg md:text-xl text-sky-400">Made</h3>
         </div>
 
